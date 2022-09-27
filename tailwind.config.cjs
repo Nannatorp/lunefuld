@@ -7,6 +7,7 @@ module.exports = {
         futura: "'futura-pt', sans-serif",
         blakely: "'blakely', sans-serif;",
       },
+      colors: {},
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
