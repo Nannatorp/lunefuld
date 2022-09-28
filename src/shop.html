@@ -13,7 +13,7 @@
           <!-- For md screen size -->
           <div
             id="md-searchbar"
-            class="hidden items-center justify-between bg-white py-5 px-6 lg:hidden"
+            class="hidden items-center justify-between bg-stone-100 py-5 px-6 lg:hidden"
           >
             <div class="flex items-center space-x-3 text-gray-800">
               <div>
@@ -31,14 +31,11 @@
               <input
                 type="text"
                 placeholder="Søg efter"
-                class="text-sm leading-none text-gray-600 focus:outline-none"
+                class="text-sm leading-none text-gray-600"
               />
             </div>
             <div class="space-x-6">
-              <button
-                aria-label="view favourites"
-                class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
-              >
+              <button aria-label="view favourites" class="text-gray-800">
                 <img
                   class="w-5"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
@@ -50,10 +47,7 @@
                   alt="favourites"
                 />
               </button>
-              <button
-                aria-label="go to cart"
-                class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
-              >
+              <button aria-label="go to cart" class="text-gray-800">
                 <img
                   class="w-5"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg"
@@ -70,7 +64,7 @@
           <!-- For md screen size -->
 
           <!-- For large screens -->
-          <div class="bg-gray-50 px-6 py-9">
+          <div class="bg-stone-100 px-6 py-9">
             <div class="container mx-auto flex items-center justify-between">
               <h1
                 class="cursor-pointer text-gray-800 md:w-2/12"
@@ -90,21 +84,19 @@
                 <li>
                   <a
                     href="shop.html"
-                    class="text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
-                    >Shop/Plakater</a
+                    class="text-base text-gray-800 hover:underline"
+                    >Plakater</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                  <a href="#" class="text-base text-gray-800 hover:underline"
                     >Inspiration</a
                   >
                 </li>
                 <li>
                   <a
                     href="om.html"
-                    class="text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="text-base text-gray-800 hover:underline"
                     >Om os</a
                   >
                 </li>
@@ -117,7 +109,7 @@
                   <button
                     onclick="toggleSearch()"
                     aria-label="search items"
-                    class="w-5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="w-5 text-gray-800"
                   >
                     <img
                       class="rotate-90 transform"
@@ -134,13 +126,13 @@
                     id="searchInput"
                     type="text"
                     placeholder="Søg"
-                    class="ml-1 hidden rounded border border-transparent px-1 text-sm text-gray-600 focus:border-gray-400 focus:outline-none"
+                    class="ml-1 hidden rounded border border-transparent px-1 text-sm text-gray-600"
                   />
                 </div>
                 <div class="hidden items-center space-x-4 lg:flex xl:space-x-8">
                   <button
                     aria-label="view favourites"
-                    class="w-6 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="w-6 text-gray-800"
                   >
                     <img
                       class=" "
@@ -153,10 +145,7 @@
                       alt="favourites"
                     />
                   </button>
-                  <button
-                    aria-label="go to cart"
-                    class="w-6 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
-                  >
+                  <button aria-label="go to cart" class="w-6 text-gray-800">
                     <img
                       class=" "
                       src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg"
@@ -174,7 +163,7 @@
                   <button
                     aria-label="show options"
                     onclick="mdOptionsToggle()"
-                    class="hidden rounded text-black focus:outline-none focus:ring-2 focus:ring-gray-600 md:flex"
+                    class="hidden rounded text-black md:flex"
                   >
                     <img
                       class=" "
@@ -191,7 +180,7 @@
                   <button
                     aria-label="open menu"
                     onclick="openMenu()"
-                    class="rounded text-black focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden"
+                    class="rounded text-black md:hidden"
                   >
                     <img
                       class=" "
@@ -211,7 +200,7 @@
           <!-- For small screen -->
           <div
             id="mobile-menu"
-            class="absolute inset-0 z-10 flex hidden h-screen w-full flex-col bg-white md:hidden"
+            class="absolute inset-0 z-10 flex hidden h-screen w-full flex-col bg-stone-400 md:hidden"
           >
             <div
               class="flex items-center justify-between border-b border-gray-200 p-4 pb-4"
@@ -232,14 +221,14 @@
                 <input
                   type="text"
                   placeholder="Søg efter"
-                  class="text-sm text-gray-600 placeholder-gray-600 focus:outline-none"
+                  class="text-sm text-gray-600 placeholder-gray-600"
                 />
               </div>
 
               <button
                 onclick="closeMenu()"
                 aria-label="close menu"
-                class="rounded focus:outline-none focus:ring-2 focus:ring-gray-600"
+                class="rounded"
               >
                 <img
                   class=""
@@ -253,12 +242,12 @@
                 />
               </button>
             </div>
-            <div class="mt-6 p-4">
+            <div class="mt-4 p-4">
               <ul class="flex flex-col space-y-6">
                 <li>
                   <a
                     href="index.html"
-                    class="flex items-center justify-between text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="flex items-center justify-between text-base text-gray-800 hover:underline"
                   >
                     Forside
                     <div>
@@ -278,9 +267,9 @@
                 <li>
                   <a
                     href="shop.html"
-                    class="flex items-center justify-between text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="flex items-center justify-between text-base text-gray-800 hover:underline"
                   >
-                    Shop/plakater
+                    Plakater
                     <div>
                       <img
                         class=""
@@ -298,7 +287,7 @@
                 <li>
                   <a
                     href="#"
-                    class="flex items-center justify-between text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="flex items-center justify-between text-base text-gray-800 hover:underline"
                   >
                     Inspiration
                     <div>
@@ -318,7 +307,7 @@
                 <li>
                   <a
                     href="om.html"
-                    class="flex items-center justify-between text-base text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="flex items-center justify-between text-base text-gray-800 hover:underline"
                   >
                     Om os
                     <div>
@@ -338,11 +327,11 @@
               </ul>
             </div>
             <div class="flex h-full items-end">
-              <ul class="flex w-full flex-col space-y-8 bg-gray-50 p-4 py-10">
+              <ul class="flex w-full flex-col space-y-8 bg-stone-300 p-4 py-10">
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="flex items-center space-x-2 text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="flex items-center space-x-2 text-gray-800 hover:underline"
                   >
                     <div>
                       <img
@@ -362,7 +351,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="flex items-center space-x-2 text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-800"
+                    class="flex items-center space-x-2 text-gray-800 hover:underline"
                   >
                     <div>
                       <img
