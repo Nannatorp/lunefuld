@@ -8,6 +8,9 @@ module.exports = {
         blakely: "'blakely', sans-serif;",
       },
       colors: {},
+      maxWidth: {
+        readable: "65ch",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
